@@ -23,11 +23,14 @@ App = React.createClass({
       currentNode: currentNode.get()
     };
   },
+  getMarkdownText(string) {
+    return { __html: `<pre>${string}</pre>` };
+  },
   getFileContent() {
     const { currentNode } = this.data;
 
     if (currentNode && currentNode.isFile) {
-      return <div>{currentNode.content}</div>
+      return <div dangerouslySetInnerHTML={this.getMarkdownText(currentNode.content)}></div>
     }
   },
   getNodeList() {
@@ -38,7 +41,6 @@ App = React.createClass({
     }
   },
   render() {
-    console.log('RENDER');
     return (
       <div className="container-fluid">
         <h1>File Manager</h1>
