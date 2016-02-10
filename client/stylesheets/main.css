@@ -1,9 +1,9 @@
 li {
-    font-size: 24px;
+  font-size: 24px;
 }
 .list-group a, .list-group a:hover, .list-group a:focus {
-    color: #333;
+  color: #333;
 }
 .list-group-item.active a {
-    color: white;
+  color: white;
 }

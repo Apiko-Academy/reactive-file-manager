@@ -15,7 +15,6 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-insecure                # Allow all DB writes from clients (for prototyping)
 react
 reactrouter:react-router
 twbs:bootstrap
@@ -23,6 +22,6 @@ velocity:chokidar
 static-html
 fortawesome:fontawesome
 maxharris9:classnames
-cfs:standard-packages
-cfs:filesystem
+jss:path
 peerlibrary:fs
+reactive-var
