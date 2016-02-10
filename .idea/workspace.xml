@@ -4,24 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a77b647e-3570-48e9-a414-b61e8e987464" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/fs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/publications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/App.jsx" afterPath="$PROJECT_DIR$/client/components/App.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/Breadcrumbs.jsx" afterPath="$PROJECT_DIR$/client/components/Breadcrumbs.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/Node.jsx" afterPath="$PROJECT_DIR$/client/components/Node.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/NodeList.jsx" afterPath="$PROJECT_DIR$/client/components/NodeList.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/routes.jsx" afterPath="$PROJECT_DIR$/client/routes.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/main.css" afterPath="$PROJECT_DIR$/client/stylesheets/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections/Files.js" afterPath="$PROJECT_DIR$/lib/collections/Files.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bootstrap.js" afterPath="$PROJECT_DIR$/server/bootstrap.js" />
-    </list>
+    <list default="true" id="a77b647e-3570-48e9-a414-b61e8e987464" name="Default" comment="" />
     <ignored path="reactive-file-manager.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -153,6 +136,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Въ" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -451,7 +439,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="743" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
