@@ -25,8 +25,3 @@ Meteor.publish('files', function (parent) {
   observe.call(this, cursor);
 });
 
-//Meteor.publish('currentNode', function (filePath) {
-//  const cursor = Files.getFileByRelativePath(filePath, true);
-//  console.log(cursor.fetch());
-//  observe.call(this, cursor);
-//});
