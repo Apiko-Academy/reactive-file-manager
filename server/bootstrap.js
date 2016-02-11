@@ -15,21 +15,20 @@ Meteor.startup(() => {
   }
 
   const log = console.log.bind(console);
-  log(baseDir.fullPath);
+
   const watcher = chokidar.watch(baseDir.fullPath, { ignoreInitial: true });
 
   ['add', 'addDir'].forEach( event => {
     watcher.on(event, filePath => {
       const parent = Files.findOne({fullPath: path.dirname(filePath)});
-      const fileStat = fs.lstatSync(filePath);
 
       Files.insert({
         _id: new Meteor.Collection.ObjectID().valueOf(),
         fullPath: filePath,
         relativePath: path.relative(baseDir.fullPath, filePath),
         name: path.basename(filePath),
-        isDirectory: fileStat.isDirectory(),
-        isFile: fileStat.isFile(),
+        isDirectory: event === 'addDir',
+        isFile: event === 'add',
         parent_id: parent ? parent._id : null
       });
 
@@ -38,9 +37,9 @@ Meteor.startup(() => {
   });
 
   watcher
-    .on('change', filePath => {
+    /*.on('change', filePath => {
       log(`File ${filePath} has been changed`)
-    })
+    })*/
     .on('unlink', filePath => {
       Files.remove({
         fullPath: filePath
