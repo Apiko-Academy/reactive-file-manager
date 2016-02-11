@@ -26,3 +26,4 @@ jss:path
 peerlibrary:fs
 reactive-var
 chuangbo:marked
+mike:mocha

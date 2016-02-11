@@ -4,6 +4,7 @@ FS = {
       const files = fs.readdirSync(fullPath).map((filePath) => {
         const newFullPath = path.join(fullPath, filePath);
         const fileStat = fs.lstatSync(newFullPath);
+
         return {
           _id: new Meteor.Collection.ObjectID().valueOf(),
           fullPath: newFullPath,

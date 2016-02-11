@@ -21,14 +21,15 @@ Meteor.startup(() => {
   ['add', 'addDir'].forEach( event => {
     watcher.on(event, filePath => {
       const parent = Files.findOne({fullPath: path.dirname(filePath)});
+      const fileStat = fs.lstatSync(filePath);
 
       Files.insert({
         _id: new Meteor.Collection.ObjectID().valueOf(),
         fullPath: filePath,
         relativePath: path.relative(baseDir.fullPath, filePath),
         name: path.basename(filePath),
-        isDirectory: false,
-        isFile: true,
+        isDirectory: fileStat.isDirectory(),
+        isFile: fileStat.isFile(),
         parent_id: parent ? parent._id : null
       });
 
