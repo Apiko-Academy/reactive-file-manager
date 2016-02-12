@@ -1,6 +1,9 @@
 const { Link } = ReactRouter;
 
 Breadcrumbs = React.createClass({
+  propTypes: {
+    filePath: React.PropTypes.string
+  },
   getHomeLink(isActive) {
     if (isActive) {
       return <li className="active">Home</li>;

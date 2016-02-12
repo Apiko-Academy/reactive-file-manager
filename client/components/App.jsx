@@ -23,14 +23,11 @@ App = React.createClass({
       currentNode: currentNode.get()
     };
   },
-  getMarkdownText(string) {
-    return { __html: `<pre>${string}</pre>` };
-  },
   getFileContent() {
     const { currentNode } = this.data;
 
     if (currentNode && currentNode.isFile) {
-      return <div dangerouslySetInnerHTML={this.getMarkdownText(currentNode.content)}></div>
+      return <Content content={currentNode.content} />;
     }
   },
   getNodeList() {

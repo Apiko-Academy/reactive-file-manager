@@ -1,4 +1,7 @@
 NodeList = React.createClass({
+  propTypes: {
+    list: React.PropTypes.array
+  },
   render() {
     const { list } = this.props;
 

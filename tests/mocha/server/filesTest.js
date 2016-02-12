@@ -58,12 +58,13 @@ if (! (typeof MochaWeb === 'undefined')) {
             done();
           }, 100);
         });
-        it('should have one file in it', function() {
+        it('should have one file in it', function(done) {
           //wait for watcher
           setTimeout(() => {
             const dir = Files.findOne({ fullPath: testDirPath });
             const children = Files.getFilesByParent(dir).fetch();
             chai.assert(children[0]);
+            done();
           }, 100);
         });
       });
